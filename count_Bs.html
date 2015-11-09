@@ -1,0 +1,27 @@
+<script>
+
+var countBs = function(character) {
+  var B_count = 0
+    for (var N = 0; N < character.length; N++){
+      if (character.charAt(N) == "B")
+        B_count += 1;
+    }
+  return B_count;
+}
+
+var countChar = function(character, ch) {
+  var B_count = 0
+    for (var N = 0; N < character.length; N++){
+      if (character.charAt(N) == ch)
+        B_count += 1;
+    }
+  return B_count;
+}
+
+console.log(countBs("BBC"));
+// → 2
+console.log(countChar("kakkerlak", "k"));
+
+
+
+</script>
